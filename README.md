@@ -19,7 +19,7 @@ The objective of this project is to design a simple single-cycle processor from 
 
 ## 👨‍💻 Author
 
-- **Mohammadmehdi Fotouhi**  
+- **Mohammad Mehdi Fotouhi**  
   - Electrical Engineering Student, Sharif University of Technology  
 
 ---
