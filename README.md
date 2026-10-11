@@ -19,7 +19,7 @@ The objective of this project is to design a simple single-cycle processor from 
 
 ## 👨‍💻 Author
 
-- **Mohammadmehdi Fotouhi Firouzabad**  
+- **Mohammadmehdi Fotouhi**  
   - Electrical Engineering Student, Sharif University of Technology  
 
 ---
@@ -72,17 +72,17 @@ Follow these steps to run the processor in the **Digital** logic simulator:
    - Ensure Java (JRE 8 or higher) is installed on your machine.
 
 2. **Assembly & Machine Code Generation**:
-   - If you modify `asm/ev_controller.asm`, convert the binary/assembly sequence into HEX format using the provided Python utility:
+   - If you modify `asm/AssemblyCode`, convert the binary/assembly sequence into HEX format using the provided Python utility:
      ```bash
-     python tools/assembler.py
+     python tools/bin_to_intel_hex_10_bit.py
      ```
-   - Alternatively, use the pre-generated `asm/ev_controller.hex`.
+   - Alternatively, use the pre-generated `program.hex`.
 
 3. **Running in Simulator**:
    - Launch **Digital** and open `src/main_processor.dig`.
    - Right-click on the **ROM (Instruction Memory)** component in the circuit.
-   - Click **Edit**, select **Load**, and choose the `asm/ev_controller.hex` file.
-   - Click the **Play/Start** button (or press `Ctrl + M`) to start the simulation clock.
+   - Click **Edit**, select **Load**, and choose the `program.hex` file.
+   - Click the **Play/Start** button to start the simulation clock.
    - Observe the execution: monitor the `PC` updates, register contents inside the Register File, and the status of the 7-segment display for battery charge indication.
 
 ---
@@ -91,7 +91,7 @@ Follow these steps to run the processor in the **Digital** logic simulator:
 
 ```text
 .
-├── docs/               # Block diagrams and simulation screenshots
+├── docs/               # Simulation screenshot & Project_Specification
 ├── src/                # Circuit files (.dig) for Digital simulator
 ├── asm/                # Assembly source code and generated HEX file
 ├── tools/              # Python conversion script (Assembly/Binary to HEX)
